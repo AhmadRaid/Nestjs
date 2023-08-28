@@ -18,6 +18,7 @@ import { TenantModule } from '../tenant/tenant.module';
 import { TenantTypeModule } from '@modules/tenant-type/tenant-type.module';
 import { TenantConfigurationModule } from '@modules/tenant-configuration/tenant-configuration.module';
 import { TeamModule } from '@modules/team/team.module';
+import { CompanyModule } from '@modules/company/company.module';
 
 @Module({
   controllers: [],
@@ -30,6 +31,7 @@ import { TeamModule } from '@modules/team/team.module';
     DatabaseModule,
     UserModule,
     TeamModule,
+    CompanyModule,
     TenantTypeModule,
     TenantConfigurationModule,
     TypeOrmModule.forRootAsync({

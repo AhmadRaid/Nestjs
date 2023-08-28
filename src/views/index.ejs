@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'nonce-randomnonce'; object-src 'none';"
+    />
+
+    <title>Welcome Page Not Found - Uni App</title>
+    <meta
+      name="description"
+      content="Oops! The page you are looking for could not be found."
+    />
+    <meta name="keywords" content="Welcome, page not found" />
+    <meta name="author" content="Uni App" />
+    <style>
+      /* Provided CSS */
+      .center-xy {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+
+      html,
+      body {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+      }
+
+      html {
+        box-sizing: border-box;
+        user-select: none;
+      }
+
+      body {
+        background-color: #000;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .copy-container {
+        text-align: center;
+      }
+
+      p {
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 0.2px;
+        margin: 0;
+      }
+
+      .handle {
+        background: #ffe500;
+        width: 14px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        margin-top: 1px;
+        position: absolute;
+      }
+    </style>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GA_TRACKING_ID');
+    </script>
+
+    <!-- Other analytics scripts -->
+    <!-- Add other analytics scripts here -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="copy-container center-xy">
+        <p>Welcome!.</p>
+      </div>
+    </div>
+  </body>
+</html>

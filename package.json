@@ -1,5 +1,5 @@
 {
-  "name": "postgre-nest-js",
+  "name": "api-gateway",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write .",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -17,21 +17,38 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "docker:up:production": "docker-compose --env-file .env.production up",
+    "docker:up:development": "docker-compose --env-file .env.development up"
   },
   "dependencies": {
+    "@nestjs/axios": "^3.0.0",
     "@nestjs/common": "^10.2.1",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.2.1",
+    "@nestjs/microservices": "^10.2.1",
     "@nestjs/platform-express": "^10.2.1",
+    "@nestjs/swagger": "^7.1.8",
+    "@nestjs/terminus": "^10.0.1",
     "@nestjs/typeorm": "^10.0.0",
     "@nestjsx/crud": "^5.0.0-alpha.3",
     "@nestjsx/crud-typeorm": "^5.0.0-alpha.3",
+    "@sentry/node": "^7.64.0",
+    "axios": "^1.5.0",
+    "axios-extensions": "^3.1.6",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
+    "compression": "^1.7.4",
+    "ejs": "^3.1.9",
+    "ioredis": "^5.3.2",
+    "kafkajs": "^2.2.4",
+    "nest-morgan": "^2.0.0",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "typeorm": "^0.3.17"
+    "typeorm": "^0.3.17",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.1.16",
